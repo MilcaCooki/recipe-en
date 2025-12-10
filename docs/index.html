@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe & Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            glass: {
+              100: 'rgba(255, 255, 255, 0.05)',
+              200: 'rgba(255, 255, 255, 0.1)',
+              300: 'rgba(255, 255, 255, 0.15)',
+              dark: 'rgba(0, 0, 0, 0.4)',
+            },
+            brand: {
+              green: '#10B981',
+              darkGreen: '#064E3B',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #020403;
+      color: #E2E8F0;
+    }
+    .glass-panel {
+      background: rgba(20, 30, 25, 0.4);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .glass-input {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+    .glass-input:focus {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(16, 185, 129, 0.4);
+      outline: none;
+    }
+    .tab-button {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+      color: #9ca3af;
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+    .tab-button:hover {
+      color: #fff;
+    }
+    .tab-button.active {
+      color: #34d399;
+      border-color: #34d399;
+    }
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-WfFBCZGA.js"></script>
+</head>
+<body class="bg-[#020403] text-slate-200">
+  <div id="app"></div>
+</body>
+</html>

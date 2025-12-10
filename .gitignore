@@ -1,0 +1,9 @@
+# 1. Ignore everything
+*
+
+# 2. Whitelist (Keep) the docs folder
+!/docs/
+!/docs/**
+
+# 3. Essential: You likely still need to track the gitignore file itself
+!.gitignore
